@@ -1,7 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    
-    // --- 1. تبديل اللغات (Arabic First Logic) ---
-    const langBtn = document.getElementById('langSwitcher');
+        const langBtn = document.getElementById('langSwitcher');
     const htmlTag = document.getElementById('mainHtml');
 
     function setLanguage(lang) {
@@ -26,12 +24,10 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // استعادة اللغة المحفوظة عند التحميل
     const savedLang = localStorage.getItem('apexLang') || 'ar';
     setLanguage(savedLang);
 
 
-    // --- 2. تشغيل قائمة الموبايل ---
     const menuBtn = document.getElementById('mobile-menu-btn');
     const navMenu = document.querySelector('.nav-links');
 
@@ -40,7 +36,6 @@ document.addEventListener('DOMContentLoaded', () => {
             navMenu.classList.toggle('active');
         });
 
-        // إغلاق القائمة عند الضغط على أي رابط
         navMenu.querySelectorAll('a').forEach(link => {
             link.addEventListener('click', () => {
                 navMenu.classList.remove('active');
@@ -48,25 +43,21 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-
-    // --- 3. أنيميشن الظهور المتكرر (Scroll Reveal Loop) ---
-    // هذا الجزء يجعل العناصر تتحرك "كل مرة" تدخل فيها الشاشة
     const revealObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                entry.target.classList.add('active'); // أضف الكلاس عند الدخول
+                entry.target.classList.add('active'); 
             } else {
-                entry.target.classList.remove('active'); // احذف الكلاس عند الخروج لتكرار الحركة
+                entry.target.classList.remove('active'); 
             }
         });
-    }, { threshold: 0.1 }); // يبدأ عندما يظهر 10% من العنصر
+    }, { threshold: 0.1 });
 
     document.querySelectorAll('.reveal').forEach(el => {
         revealObserver.observe(el);
     });
 
 
-    // --- 4. وظيفة العداد المتحرك (Stats Counter) ---
     const counters = document.querySelectorAll('.counter');
     const counterSpeed = 100;
 
@@ -89,7 +80,6 @@ document.addEventListener('DOMContentLoaded', () => {
         updateCount();
     };
 
-    // تشغيل العداد عند رؤية سكشن الإحصائيات
     const statsSection = document.querySelector('.stats-section');
     let counterStarted = false;
 
@@ -97,7 +87,7 @@ document.addEventListener('DOMContentLoaded', () => {
         entries.forEach(entry => {
             if (entry.isIntersecting && !counterStarted) {
                 counters.forEach(c => startCounter(c));
-                counterStarted = true; // العداد يشتغل مرة واحدة فقط لضمان دقة الأرقام
+                counterStarted = true; 
             }
         });
     }, { threshold: 0.5 });
