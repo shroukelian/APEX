@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" id="mainHtml">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أيبكس نورث اللوجستية | Apex North Logistics</title>
+    <!-- خطوط جوجل -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Almarai:wght@400;700;800&family=Poppins:wght@400;600;800&display=swap"
+        rel="stylesheet">
+    <!-- الأيقونات -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- الهيدر -->
+   <header class="main-header">
+        <div class="container navbar">
+            <!-- اللوجو والاسم -->
+            <div class="logo" onclick="location.href='index.html'" style="cursor:pointer">
+                <img src="images/logo.png" alt="Apex North Logo">
+                <div class="logo-text">
+                    <h1>APEX NORTH</h1>
+                    <span>LOGISTICS</span>
+                </div>
+            </div>
+
+            <!-- القائمة الرئيسية المحدثة -->
+            <nav id="nav-menu">
+                <ul class="nav-links">
+                    <li>
+                        <a href="#home" class="lang-ar">الرئيسية</a>
+                        <a href="#home" class="lang-en">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about" class="lang-ar">من نحن</a>
+                        <a href="#about" class="lang-en">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#services" class="lang-ar">خدماتنا</a>
+                        <a href="#services" class="lang-en">Services</a>
+                    </li>
+                    <!-- <li>
+                        <a href="#vision" class="lang-ar">رؤية 2030</a>
+                        <a href="#vision" class="lang-en">Vision 2030</a>
+                    </li> -->
+                    <li>
+                        <a href="#contact" class="lang-ar">تواصل معنا</a>
+                        <a href="#contact" class="lang-en">Contact</a>
+                    </li>
+
+                    <!-- زر تبديل اللغة داخل القائمة للموبايل -->
+                    <li class="lang-switch-item">
+                        <button id="langSwitcher" class="lang-btn-nav">English</button>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- زر الموبايل (التلات شرطات) -->
+            <div class="menu-toggle" id="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- الواجهة (Hero) -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h2 class="animate-up lang-ar">حلول لوجستية ذكية <br><span class="red-text">تغطي المملكة</span></h2>
+            <h2 class="animate-up lang-en">Smart Logistics <br><span class="red-text">Across KSA</span></h2>
+            <p class="lang-ar">السرعة، الأمان، والدقة في نقل بضائعكم وطلباتكم.</p>
+            <p class="lang-en">Speed, safety, and precision in delivering your goods and orders.</p>
+            <div class="hero-btns animate-up">
+                <a href="#services" class="btn-red lang-ar">اكتشف خدماتنا</a>
+                <a href="#services" class="btn-red lang-en">Our Services</a>
+                <a href="tel:0507540330" class="btn-white lang-ar">اتصل بنا</a>
+                <a href="tel:0507540330" class="btn-white lang-en">Call Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- الخدمات -->
+    <section id="services" class="section-padding container">
+        <div class="section-header text-center reveal">
+            <h2 class="lang-ar" style="text-align: center;">نطاق <span class="red-text">أعمالنا</span></h2>
+            <h2 class="lang-en"style="text-align: center;">Our <span class="red-text">Scope of Work</span></h2>
+            <div class="red-line"></div>
+        </div>
+
+        <div class="services-grid">
+            <!-- خدمة 1 -->
+            <div class="s-card reveal">
+                <div class="s-icon"><i class="fas fa-box-open"></i></div>
+                <h3 class="lang-ar">بضائع صغيرة</h3>
+                <h3 class="lang-en">Small Goods</h3>
+                <p class="lang-ar">توصيل الطرود والمنتجات الصغيرة بعناية فائقة وسرعة قياسية.</p>
+                <p class="lang-en">Delivering parcels and small products with extreme care and speed.</p>
+            </div>
+            <!-- خدمة 2 -->
+            <div class="s-card reveal">
+                <div class="s-icon"><i class="fas fa-utensils"></i></div>
+                <h3 class="lang-ar">توصيل طلبات الطعام</h3>
+                <h3 class="lang-en">Food Delivery</h3>
+                <p class="lang-ar">حلول توصيل متكاملة للمطاعم تضمن وصول الطعام طازجاً.</p>
+                <p class="lang-en">Integrated delivery solutions for restaurants ensuring fresh food delivery.</p>
+            </div>
+            <!-- خدمة 3 -->
+            <div class="s-card reveal">
+                <div class="s-icon"><i class="fas fa-truck-moving"></i></div>
+                <h3 class="lang-ar">شحن البضائع في المملكة</h3>
+                <h3 class="lang-en">KSA Shipping</h3>
+                <p class="lang-ar">نقل وشحن البضائع التجارية بين كافة مدن ومناطق المملكة.</p>
+                <p class="lang-en">Transporting commercial goods across all cities and regions of KSA.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم من نحن -->
+    <section id="about" class="section-padding container">
+        <div class="grid-2 flex-center">
+            <div class="about-img-wrapper reveal">
+                <div class="red-bg-shape"></div>
+                <img src="https://images.unsplash.com/photo-1578575437130-527eed3abbec?q=80&w=1000" alt="Apex North" class="main-about-img">
+                <div class="exp-badge">
+                    <span class="red-text">+10</span>
+                    <p class="lang-ar">سنوات خبرة</p>
+                    <p class="lang-en">Years Exp</p>
+                </div>
+            </div>
+
+            <div class="about-text reveal">
+                <span class="section-tag lang-ar">من نحن</span>
+                <span class="section-tag lang-en">About Us</span>
+                <h2 class="lang-ar">شريككم الموثوق في <br><span class="red-text">عالم اللوجستيات</span></h2>
+                <h2 class="lang-en">Your Trusted Partner in <br><span class="red-text">Logistics</span></h2>
+
+                <p class="lang-ar">شركة أيبكس نورث هي كيان لوجستي وطني يسعى لتطوير مفهوم الشحن والتوصيل في المملكة، نجمع بين التكنولوجيا الحديثة والخبرة الميدانية لنقدم لكم أسرع الحلول لنقل بضائعكم بكل أمان ودقة.</p>
+                <p class="lang-en">Apex North is a national logistics entity seeking to develop the concept of shipping and delivery in the Kingdom. We combine modern technology and field expertise to provide the fastest solutions.</p>
+
+                <div class="v-m-grid">
+                    <div class="v-m-item">
+                        <div class="v-m-icon"><i class="fas fa-eye"></i></div>
+                        <div>
+                            <h4 class="lang-ar">رؤيتنا</h4><h4 class="lang-en">Vision</h4>
+                            <p class="lang-ar">الريادة في تقديم الحلول اللوجستية المتكاملة.</p>
+                            <p class="lang-en">Leadership in providing integrated logistics solutions.</p>
+                        </div>
+                    </div>
+                    <div class="v-m-item">
+                        <div class="v-m-icon"><i class="fas fa-paper-plane"></i></div>
+                        <div>
+                            <h4 class="lang-ar">رسالتنا</h4><h4 class="lang-en">Mission</h4>
+                            <p class="lang-ar">تسهيل التجارة عبر خدمات شحن ذكية وآمنة.</p>
+                            <p class="lang-en">Facilitating trade through smart and safe shipping services.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم لماذا نحن -->
+    <section class="section-padding bg-light">
+        <div class="container">
+            <div class="section-header text-center reveal">
+                <h2 class="lang-ar">لماذا تختار <span class="red-text">أيبكس نورث</span>؟</h2>
+                <h2 class="lang-en">Why Choose <span class="red-text">Apex North</span>?</h2>
+            </div>
+            <div class="features-grid-3">
+                <div class="f-item-pro reveal">
+                    <i class="fas fa-shield-alt"></i>
+                    <h4 class="lang-ar">أمان تام</h4><h4 class="lang-en">Full Safety</h4>
+                    <p class="lang-ar">نضمن سلامة بضائعكم من الاستلام وحتى التسليم.</p>
+                    <p class="lang-en">Guaranteeing the safety of your goods from pickup to delivery.</p>
+                </div>
+                <div class="f-item-pro reveal">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <h4 class="lang-ar">تتبع مباشر</h4><h4 class="lang-en">Real-time Tracking</h4>
+                    <p class="lang-ar">أنظمة تتبع متطورة تتيح لك معرفة مكان شحنتك لحظياً.</p>
+                    <p class="lang-en">Advanced tracking systems that show your shipment location in real-time.</p>
+                </div>
+                <div class="f-item-pro reveal">
+                    <i class="fas fa-headset"></i>
+                    <h4 class="lang-ar">دعم 24/7</h4><h4 class="lang-en">24/7 Support</h4>
+                    <p class="lang-ar">فريق خدمة عملاء جاهز للرد على استفساراتكم طوال الوقت.</p>
+                    <p class="lang-en">Customer service team ready to answer your inquiries at all times.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الإحصائيات -->
+    <section class="stats-section reveal">
+        <div class="container stats-grid">
+            <div class="stat-box">
+                <h3 class="red-text counter" data-target="50">+0</h3>
+                <p class="lang-ar">مدينة نغطيها</p><p class="lang-en">Cities Covered</p>
+            </div>
+            <div class="stat-box">
+                <h3 class="red-text counter" data-target="100" data-suffix="K">+0</h3>
+                <p class="lang-ar">شحنة مكتملة</p><p class="lang-en">Delivered Shipments</p>
+            </div>
+            <div class="stat-box">
+                <h3 class="red-text counter" data-target="200">+0</h3>
+                <p class="lang-ar">شاحنة مجهزة</p><p class="lang-en">Equipped Trucks</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- التواصل -->
+    <section id="contact" class="contact-area reveal">
+        <div class="container">
+            <div class="contact-card-modern">
+                <div class="contact-info-side">
+                    <h2 class="lang-ar">تواصل معنا <span class="red-text">الآن</span></h2>
+                    <h2 class="lang-en">Contact Us <span class="red-text">Now</span></h2>
+                    <p class="lang-ar">فريقنا جاهز للرد على استفساراتكم وتلبية طلباتكم على مدار الساعة.</p>
+                    <p class="lang-en">Our team is ready to respond to your inquiries and fulfill your requests around the clock.</p>
+
+                    <div class="contact-methods-list">
+                        <div class="c-method-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <div class="method-txt">
+                                <h4 class="lang-ar">اتصال هاتفي</h4><h4 class="lang-en">Phone Call</h4>
+                                <span dir="ltr">050 754 0330</span><br><span dir="ltr">053 603 5707</span>
+                            </div>
+                        </div>
+                        <div class="c-method-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="method-txt">
+                                <h4 class="lang-ar">المقر</h4><h4 class="lang-en">Location</h4>
+                                <p class="lang-ar">المملكة العربية السعودية</p><p class="lang-en">Kingdom of Saudi Arabia</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-actions-side">
+                    <div class="service-hours">
+                        <i class="fas fa-clock"></i>
+                        <span class="lang-ar">جاهزون لخدمتكم 24/7</span>
+                        <span class="lang-en">Ready to Serve 24/7</span>
+                    </div>
+                    <a href="https://wa.me/966507540330" class="btn-wa-footer">
+                        <i class="fab fa-whatsapp"></i> <span class="lang-ar">محادثة واتساب</span><span class="lang-en">WhatsApp Chat</span>
+                    </a>
+                    <a href="tel:0507540330" class="btn-call-footer">
+                        <i class="fas fa-phone"></i> <span class="lang-ar">اتصال مباشر</span><span class="lang-en">Direct Call</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- الفوتر -->
+    <footer class="footer-pro">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <div class="logo">
+                    <img src="images/logo.png" alt="Apex North">
+                    <h3 class="red-text">APEX NORTH</h3>
+                </div>
+                <p class="lang-ar">شركة رائدة في الحلول اللوجستية والنقل المبرد والطرود الصغيرة في المملكة.</p>
+                <p class="lang-en">A leading company in logistics solutions, refrigerated transport, and small parcels in the Kingdom.</p>
+            </div>
+            <div class="footer-links-col">
+                <h4 class="lang-ar">روابط سريعة</h4><h4 class="lang-en">Quick Links</h4>
+                <ul>
+                    <li><a href="#home"><span class="lang-ar">الرئيسية</span><span class="lang-en">Home</span></a></li>
+                    <li><a href="#services"><span class="lang-ar">خدماتنا</span><span class="lang-en">Services</span></a></li>
+                    <li><a href="#about"><span class="lang-ar">من نحن</span><span class="lang-en">About Us</span></a></li>
+                </ul>
+            </div>
+            <div class="footer-vision">
+                <img src="images/2030.webp" alt="Vision 2030" class="f-vision-img">
+                <p class="lang-ar">نساهم في تحقيق رؤية المملكة 2030</p>
+                <p class="lang-en">Contributing to Vision 2030</p>
+            </div>
+        </div>
+        <div class="copyright-bottom text-center">
+            <p>&copy; 2026 جميع الحقوق محفوظة لشركة أيبكس نورث اللوجستية</p>
+        </div>
+    </footer>
+
+    <!-- أزرار التواصل العائمة -->
+    <div class="floating-actions">
+        <a href="https://wa.me/966507540330" class="float-btn whatsapp"><i class="fab fa-whatsapp"></i></a>
+        <a href="tel:0507540330" class="float-btn phone"><i class="fas fa-phone-alt"></i></a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
