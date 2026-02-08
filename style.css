@@ -979,7 +979,6 @@ body {
         padding: 35px 20px;
     }
 }
-/* --- تنسيق سكشن وسع أعمالك المطور --- */
 .expand-section {
     background-color: #fff;
     padding: 60px 0;
@@ -989,14 +988,13 @@ body {
     background: #fdfdfd;
     border-radius: 30px;
     padding: 60px 40px;
-    text-align: center; /* توسيط كل المحتوى */
+    text-align: center; 
     border: 1px solid #f0f0f0;
     box-shadow: 0 15px 45px rgba(0, 0, 0, 0.05);
     position: relative;
     overflow: hidden;
 }
 
-/* إضافة لمسة جمالية في الخلفية */
 .expand-banner::before {
     content: '';
     position: absolute;
@@ -1019,11 +1017,10 @@ body {
     font-size: 18px;
     color: #555;
     max-width: 800px;
-    margin: 0 auto 35px; /* توسيط النص وتوفير مسافة تحت للزر */
+    margin: 0 auto 35px; 
     line-height: 1.8;
 }
 
-/* زر مطور واحترافي */
 .btn-red-pro {
     background: var(--red);
     color: var(--primary-red);
@@ -1039,11 +1036,10 @@ body {
 
 .btn-red-pro:hover {
     transform: translateY(-5px);
-    background: #000; /* يقلب أسود عند الهوفر ليعطي فخامة */
+    background: #000; 
     color: #fff;
 }
 
-/* ضبط المسافات في الموبايل */
 @media (max-width: 768px) {
     .expand-banner {
         padding: 40px 20px;
